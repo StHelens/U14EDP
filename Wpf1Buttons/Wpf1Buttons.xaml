@@ -1,0 +1,12 @@
+﻿<Window 
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       Title="Wpf1Buttons" Height="300" Width="305.137"> 
+       <Grid>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Height="129" Margin="10,10,0,0" VerticalAlignment="Top" Width="272" FontWeight="Bold"/>
+        <Button x:Name="button" Content="Group 2" HorizontalAlignment="Left" Height="41" Margin="10,162,0,0" VerticalAlignment="Top" Width="125" Click="Group2_Click"/>
+        <Button x:Name="button_Copy" Content="Group 3" HorizontalAlignment="Left" Height="41" Margin="157,162,0,0" VerticalAlignment="Top" Width="125" Click="Group3_Click"/>
+        <Button x:Name="button_Copy1" Content="Group 4" HorizontalAlignment="Left" Height="41" Margin="10,218,0,0" VerticalAlignment="Top" Width="125" Click="Group4_Click"/>
+        <Button x:Name="button_Copy2" Content="Group 5" HorizontalAlignment="Left" Height="41" Margin="157,218,0,0" VerticalAlignment="Top" Width="125" Click="Group5_Click"/>
+    </Grid>
+</Window> 
