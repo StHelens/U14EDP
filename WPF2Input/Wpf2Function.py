@@ -8,9 +8,13 @@ class MyWindow(Window):
         self.label.Content = "Enter your name"
         self.textBox.Text = ""
     
-    def button_Click(self, sender, e):
+    def inputName(self):
         userName = self.textBox.Text
-        self.label.Content = ("Welcome " + userName.capitalize() + " it's nice to meet you")
+        return userName
+
+    def button_Click(self, sender, e):
+        userName = self.inputName()
+        self.label.Content = ("Welcome " + userName.capitalize() + " you're using a function")
     
 if __name__ == '__main__':
     Application().Run(MyWindow())

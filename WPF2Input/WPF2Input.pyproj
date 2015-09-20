@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3825ded9-07b4-4df6-ad68-67521d041df8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>WPF2Input.py</StartupFile>
+    <StartupFile>Wpf2Function.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Wpf2Function.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="WPF2Input.py" />
   </ItemGroup>
   <ItemGroup>
