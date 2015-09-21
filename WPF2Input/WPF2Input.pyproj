@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3825ded9-07b4-4df6-ad68-67521d041df8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Wpf2Function.py</StartupFile>
+    <StartupFile>WPF2Input.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
