@@ -15,6 +15,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Wpf1Buttons", "Wpf1Buttons\
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Wpf4Dates", "Wpf4Dates\Wpf4Dates.pyproj", "{27A9F8DE-7990-417C-875E-85037E0FCDBB}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Wpf5Conditions", "Wpf5Conditions\Wpf5Conditions.pyproj", "{FCEF6C80-047B-4A56-8871-E636E34E7DB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,8 @@ Global
 		{F768162D-3A86-45F5-ABCB-49889374892C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27A9F8DE-7990-417C-875E-85037E0FCDBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{27A9F8DE-7990-417C-875E-85037E0FCDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCEF6C80-047B-4A56-8871-E636E34E7DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCEF6C80-047B-4A56-8871-E636E34E7DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
