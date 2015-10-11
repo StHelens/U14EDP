@@ -1,0 +1,21 @@
+﻿<Window 
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       Title="Wpf6Complex" Height="300" Width="300">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="126" Margin="10,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"><InlineUIContainer>
+        		<Label x:Name="label1" Content="Label1" Height="25" Width="272"/>
+        	</InlineUIContainer><InlineUIContainer>
+        		<ListBox x:Name="listBox" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="135" SelectionChanged="listBox_SelectionChanged"/>
+        	</InlineUIContainer><InlineUIContainer>
+        		<ListBox x:Name="listBox1" Height="70" Width="135" Visibility="Hidden" VerticalAlignment="Bottom"/>
+        	</InlineUIContainer></TextBlock>
+        <Label x:Name="label2" Content="Label2" HorizontalAlignment="Left" Height="25" Margin="12,196,0,0" VerticalAlignment="Top" Width="258"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="29" Margin="12,221,0,0" VerticalAlignment="Top" Width="119" Click="button_Click"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"><InlineUIContainer>
+        		<Label x:Name="label" Content="Label" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="272"/>
+        	</InlineUIContainer><InlineUIContainer>
+        		<TextBox x:Name="textBox" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="130"/>
+        	</InlineUIContainer></TextBlock>
+    </Grid>
+</Window> 
