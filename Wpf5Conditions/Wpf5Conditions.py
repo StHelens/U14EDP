@@ -10,9 +10,9 @@ class MyWindow(Window):
         self.fifa = 44.99
         self.subtotal = 0
         self.label.Content = "Add items to basket below "
-        self.label1.Content = ("Battlefront = %s" % self.battlefront)
-        self.label2.Content = ("Halo 5 = %s" % self.halo)
-        self.label3.Content = ("FIFA 16 = %s" % self.fifa)
+        self.checkBox.Content = ("Battlefront = %s" % self.battlefront)
+        self.checkBox1.Content = ("Halo 5 = %s" % self.halo)
+        self.checkBox2.Content = ("FIFA 16 = %s" % self.fifa)
         self.label4.Content = "Total"
         self.button.Content = "Calculate"
     
