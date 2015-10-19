@@ -8,7 +8,7 @@ from System.Windows import Application, Window
 class MyWindow(Window):
     def __init__(self):
         wpf.LoadComponent(self, 'Wpf6Complex.xaml')
-        europe = ["France", "Germany", "UK"]                            # a list of strings
+        europe = ["France", "Germany", "UK"]    # a list of strings
         area = ["Mainland", "Guernsey", "Jersey"]
         self.label.Content = "Enter total before Tax"
         self.label1.Content = "Select destination country "
