@@ -11,7 +11,7 @@ class MyWindow(Window):
         wpf.LoadComponent(self, 'Wpf7While.xaml')
     
     def polylineShape(self, sides):
-        self.myCanvas.c
+        self.myCanvas.Children.Clear()
         h = self.myCanvas.Width/2
         k = self.myCanvas.Height/2              #Calculate the center of the canvas
         r = 100                                 #r is the radius from the center of the canvas

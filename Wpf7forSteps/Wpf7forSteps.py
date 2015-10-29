@@ -1,32 +1,33 @@
-import wpf
+﻿import wpf
 import math
 
 from System.Windows import Application, Window
 from System.Windows.Shapes import Polyline
 from System.Windows.Media import Brushes
 from System.Windows import Point
+from System.Windows.Media import SolidColorBrush
 
 
 class MyWindow(Window):
     def __init__(self):
         wpf.LoadComponent(self, 'Wpf7forSteps.xaml')
-        self.polylineShape(20)
+        self.polylineShape()
     
-    def polylineShape(self, sides):
+    def polylineShape(self):
         
-        h = self.myCanvas.Width/2
-        k = self.myCanvas.Height/2
-        r = 100
-        step = 360
-        theta = 0
+        x = self.myCanvas.Width/2
+        y = self.myCanvas.Height/2
         polyline = Polyline()
         polyline.StrokeThickness = 5
-        polyline.Stroke = Brushes.Blue
 
-        for steps in range(sides):
-            _x  =  h + sides
-            _y  =  k + sides
-            polyline.Points.Add(Point(_x,_y))
+
+        for steps in ['Red','Blue','Green','Black']:
+            x = x
+            y = x            
+            polyline.Points.Add(Point(x,y))
+            x = x + 40
+            polyline.Points.Add(Point(x,y))
+            polyline.Stroke = Brushes.Red    #should change colour
 
         self.myCanvas.Children.Add(polyline)
 
