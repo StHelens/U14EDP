@@ -5,7 +5,6 @@ from System.Windows import Application, Window
 from System.Windows.Shapes import Polyline
 from System.Windows.Media import Brushes
 from System.Windows import Point
-from System.Windows.Media import SolidColorBrush
 
 
 class MyWindow(Window):
@@ -14,22 +13,24 @@ class MyWindow(Window):
         self.polylineShape()
     
     def polylineShape(self):
-        
-        x = self.myCanvas.Width/2
-        y = self.myCanvas.Height/2
-        polyline = Polyline()
-        polyline.StrokeThickness = 5
+        x = 0
+        y = 0
 
+        for steps in [Brushes.SteelBlue, Brushes.DarkOrange, Brushes.DarkSeaGreen, Brushes.Honeydew]:
+            polyline = Polyline()                                           #New Polyline for each iteration 
+            polyline.StrokeThickness = self.myCanvas.Height/4               #Calculate the width of the line 
+                
+            x = 0                                                           
+            y = y + self.myCanvas.Height/4                                  #Move the y coordinate down
+            polyline.Points.Add(Point(x,y))                                 #Add x,y start point
+            
+            x = self.myCanvas.Width                                         #Move x coordinate to the end of canvas
+            polyline.Points.Add(Point(x,y))                                 #Add x,y end point
 
-        for steps in ['Red','Blue','Green','Black']:
-            x = x
-            y = x            
-            polyline.Points.Add(Point(x,y))
-            x = x + 40
-            polyline.Points.Add(Point(x,y))
-            polyline.Stroke = Brushes.Red    #should change colour
+            polyline.Stroke = steps                                         #Set the brush colour based on the steps value
+                        
+            self.myCanvas.Children.Add(polyline)                            #Draw the line on the canvas
 
-        self.myCanvas.Children.Add(polyline)
 
 if __name__ == '__main__':
     Application().Run(MyWindow())
