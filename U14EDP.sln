@@ -17,7 +17,7 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Wpf5Conditions", "Wpf5Condi
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Wpf6Complex", "Wpf6Complex\Wpf6Complex.pyproj", "{56CF9521-8F4B-4B3A-966B-F0985396A230}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Wpf7While", "Wpf7While\Wpf7While.pyproj", "{424CA0E2-1181-423C-BD79-DD8A40CBD64A}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Wpf8While", "Wpf7While\Wpf8While.pyproj", "{424CA0E2-1181-423C-BD79-DD8A40CBD64A}"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Wpf7forSteps", "Wpf7forSteps\Wpf7forSteps.pyproj", "{BCB79183-4492-482C-A1C4-3EDCBF1BB795}"
 EndProject

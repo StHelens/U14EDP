@@ -8,17 +8,17 @@ from System.Windows import Point
 
 class MyWindow(Window):
     def __init__(self):
-        wpf.LoadComponent(self, 'Wpf7While.xaml')
+        wpf.LoadComponent(self, 'Wpf8While.xaml')
     
     def polylineShape(self, sides):
         self.myCanvas.Children.Clear()
         h = self.myCanvas.Width/2
         k = self.myCanvas.Height/2              #Calculate the center of the canvas
         r = 100                                 #r is the radius from the center of the canvas
-        step = math.pi/sides                    #the location of each point around the circumference
+        step = 2 * math.pi/sides                #the location of each point around the circumference
         theta = 0                               #theta starts at 0' anticlockwise to 360'
         polyline = Polyline()
-        polyline.StrokeThickness = 5
+        polyline.StrokeThickness = 1
         polyline.Stroke = Brushes.Blue
 
         while theta <= 360:                     #While loop, terminates after one rotation
