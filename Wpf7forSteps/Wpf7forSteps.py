@@ -1,10 +1,8 @@
 ﻿import wpf
-import math
 
-from System.Windows import Application, Window
+from System.Windows import Application, Window, Point
 from System.Windows.Shapes import Polyline
 from System.Windows.Media import Brushes
-from System.Windows import Point
 
 
 class MyWindow(Window):
@@ -13,10 +11,10 @@ class MyWindow(Window):
         self.polylineShape()
     
     def polylineShape(self):
-        x = 0
+        x = 0                                                               #initialise local variables
         y = 0
 
-        for steps in [Brushes.SteelBlue, Brushes.DarkOrange, Brushes.DarkSeaGreen, Brushes.Honeydew]:
+        for steps in [Brushes.SteelBlue, Brushes.DarkOrange, Brushes.DarkSeaGreen, Brushes.Honeydew]:   #for loop completes one iteration for each brush colour
             polyline = Polyline()                                           #New Polyline for each iteration 
             polyline.StrokeThickness = self.myCanvas.Height/4               #Calculate the width of the line 
                 
@@ -29,7 +27,7 @@ class MyWindow(Window):
 
             polyline.Stroke = steps                                         #Set the brush colour based on the steps value
                         
-            self.myCanvas.Children.Add(polyline)                            #Draw the line on the canvas
+            self.myCanvas.Children.Add(polyline)                            #Draw the line on the canvas, adding the polyline as a child of the canvas
 
 
 if __name__ == '__main__':

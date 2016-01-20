@@ -7,8 +7,8 @@ class MyWindow(Window):
         wpf.LoadComponent(self, 'Wpf1Buttons.xaml')
         self.message = "Group %s is the best"
     
-    def Group2_Click(self, sender, e):
-        self.label.Content = self.message % 2
+    def Group2_Click(self, sender, e):              #button clicked event trigger
+        self.label.Content = self.message % 2       #event handler to update the label with a predefined message
     
     def Group3_Click(self, sender, e):
         self.label.Content = self.message % 3
